@@ -1,0 +1,18 @@
+E:\VisualStudio\LAB2sharp\LAB2sharp\bin\Debug\LAB2sharp.exe.config
+E:\VisualStudio\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.csprojResolveAssemblyReference.cache
+E:\VisualStudio\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.Form2.resources
+E:\VisualStudio\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.Properties.Resources.resources
+E:\VisualStudio\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.csproj.GenerateResource.Cache
+E:\VisualStudio\LAB2sharp\LAB2sharp\bin\Debug\LAB2sharp.exe
+E:\VisualStudio\LAB2sharp\LAB2sharp\bin\Debug\LAB2sharp.pdb
+E:\VisualStudio\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.exe
+E:\VisualStudio\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\bin\Debug\LAB2sharp.exe.config
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\bin\Debug\LAB2sharp.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\bin\Debug\LAB2sharp.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.csprojResolveAssemblyReference.cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.Form2.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.Properties.Resources.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.csproj.GenerateResource.Cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB2sharp\LAB2sharp\obj\Debug\LAB2sharp.pdb
