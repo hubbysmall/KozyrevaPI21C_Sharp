@@ -51,7 +51,6 @@ namespace Lab3sharpNEW
         {
             return !docks.ContainsKey(index);
         }
-
         public T this[int indx]
         {
             get

@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace Lab3sharpNEW
 {
+    public delegate void myDel(Lab3sharpNEW.ITransport boat);
     static class Program
     {
         /// <summary>

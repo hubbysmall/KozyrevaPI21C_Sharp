@@ -14,5 +14,6 @@ namespace Lab3sharpNEW
         void setPosition(int x, int y);
         void loadCargo(int count);
         int relieveCargo();
+        void setMainColor(Color color);
     }
 }

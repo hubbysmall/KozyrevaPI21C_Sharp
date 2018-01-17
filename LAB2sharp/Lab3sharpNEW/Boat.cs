@@ -93,11 +93,7 @@ namespace Lab3sharpNEW
         }
         protected virtual void drawSailingShip(Graphics g)
         {
-            //контур
             Pen pen = new Pen(BodyColor);
-            //         g.DrawArc(pen, startPosX, startPosY, 20, 20, 0, 180);
-            //          g.DrawLine(pen, startPosX, startPosY + 10, startPosX + 20, startPosY + 10);
-            //залив
             Brush brBrown = new SolidBrush(BodyColor);
 
             g.FillPie(brBrown, startPosX, startPosY, 70, 50, 0, 180);
