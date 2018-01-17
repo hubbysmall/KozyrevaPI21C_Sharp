@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.putBoatInDock = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.putShipInDock = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TakeBoat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,20 +38,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.previousBtn = new System.Windows.Forms.Button();
             this.nextBtn = new System.Windows.Forms.Button();
+            this.orderBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // putBoatInDock
-            // 
-            this.putBoatInDock.Location = new System.Drawing.Point(913, 158);
-            this.putBoatInDock.Name = "putBoatInDock";
-            this.putBoatInDock.Size = new System.Drawing.Size(113, 35);
-            this.putBoatInDock.TabIndex = 0;
-            this.putBoatInDock.Text = "Поставить лодку в док";
-            this.putBoatInDock.UseVisualStyleBackColor = true;
-            this.putBoatInDock.Click += new System.EventHandler(this.putBoatInDock_Click);
             // 
             // pictureBox1
             // 
@@ -62,16 +51,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(881, 497);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // putShipInDock
-            // 
-            this.putShipInDock.Location = new System.Drawing.Point(913, 199);
-            this.putShipInDock.Name = "putShipInDock";
-            this.putShipInDock.Size = new System.Drawing.Size(113, 36);
-            this.putShipInDock.TabIndex = 2;
-            this.putShipInDock.Text = "Парусник в док";
-            this.putShipInDock.UseVisualStyleBackColor = true;
-            this.putShipInDock.Click += new System.EventHandler(this.putShipInDock_Click);
             // 
             // groupBox1
             // 
@@ -158,19 +137,28 @@
             this.nextBtn.UseVisualStyleBackColor = true;
             this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
+            // orderBtn
+            // 
+            this.orderBtn.Location = new System.Drawing.Point(930, 158);
+            this.orderBtn.Name = "orderBtn";
+            this.orderBtn.Size = new System.Drawing.Size(75, 47);
+            this.orderBtn.TabIndex = 8;
+            this.orderBtn.Text = "Заказать транспорт";
+            this.orderBtn.UseVisualStyleBackColor = true;
+            this.orderBtn.Click += new System.EventHandler(this.orderBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 534);
+            this.Controls.Add(this.orderBtn);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.previousBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.putShipInDock);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.putBoatInDock);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -183,10 +171,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button putBoatInDock;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button putShipInDock;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Button TakeBoat;
@@ -196,6 +181,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button previousBtn;
         private System.Windows.Forms.Button nextBtn;
+        private System.Windows.Forms.Button orderBtn;
     }
 }
 

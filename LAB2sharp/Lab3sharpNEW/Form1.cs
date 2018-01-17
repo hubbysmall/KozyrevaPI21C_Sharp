@@ -13,6 +13,7 @@ namespace Lab3sharpNEW
     public partial class Form1 : Form
     {
         Port port;
+        additionalForm addiForm;
 
         public Form1()
         {
@@ -109,6 +110,29 @@ namespace Lab3sharpNEW
             port.LevelDown();
             listBox1.SelectedIndex = port.getCurrentDock;
             Draw();
+        }
+
+        private void orderBtn_Click(object sender, EventArgs e)
+        {           
+            addiForm = new additionalForm();
+            addiForm.AddEvent(addBoat);
+            addiForm.Show();
+        }
+
+        private void addBoat(ITransport boat) {
+            if (boat != null)
+            {
+                int place = port.PutInDock(boat);
+                if (place > -1)
+                {
+                    Draw();
+                    MessageBox.Show("Ваше место:" + place);
+                }
+                else
+                {
+                    MessageBox.Show("Поставить не получилось");
+                }
+            }
         }
     }
 }

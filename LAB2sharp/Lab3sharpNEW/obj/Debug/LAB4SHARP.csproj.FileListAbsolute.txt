@@ -10,12 +10,22 @@ C:\Users\Мария\Desktop\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\LAB4SHARP.csproj
 C:\Users\Мария\Desktop\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe.config
 C:\Users\Мария\Desktop\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.exe
 C:\Users\Мария\Desktop\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.pdb
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe.config
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.exe
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.pdb
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.pdb
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\obj\Debug\LAB4SHARP.csprojResolveAssemblyReference.cache
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Form1.resources
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Properties.Resources.resources
-C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\LAB4SHARP\Lab3sharpNEW\obj\Debug\LAB4SHARP.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe.config
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.exe
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.pdb
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.pdb
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.additionalForm.resources
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Form1.resources
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Properties.Resources.resources
+C:\Users\user\Desktop\ТП\LAB4SHARP\Lab3sharpNEW\obj\Debug\LAB4SHARP.csproj.GenerateResource.Cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe.config
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\obj\Debug\LAB4SHARP.csprojResolveAssemblyReference.cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.additionalForm.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Form1.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Properties.Resources.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\лаба5\LAB4SHARP\Lab3sharpNEW\obj\Debug\LAB4SHARP.csproj.GenerateResource.Cache

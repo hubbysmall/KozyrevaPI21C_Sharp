@@ -11,10 +11,6 @@ namespace Lab3sharpNEW
     {
         private bool sail;
         private Color addColor;
-        //       public bool wrongSailBoatSpeed = false;
-        //        public bool wrongSailBoatCargo = false;
-        //        public bool wrongSailBoatWeight = false;
-
         public override int MaxSpeed
         {
             get
@@ -91,6 +87,11 @@ namespace Lab3sharpNEW
                 g.FillPie(brWhite, startPosX + 25, startPosY - 40, 50, 70, -90, 180);
                 g.DrawArc(pen, startPosX + 25, startPosY - 40, 50, 70, -90, 180);
             }
+        }
+
+        public void SetDopColor(Color color)
+        {
+            addColor = color;
         }
 
     }
