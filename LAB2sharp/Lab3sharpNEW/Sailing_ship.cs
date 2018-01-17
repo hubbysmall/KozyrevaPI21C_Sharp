@@ -7,8 +7,49 @@ using System.Threading.Tasks;
 
 namespace Lab3sharpNEW
 {
-    public class Sailing_ship: Boat
+    public class Sailing_ship: Boat, IComparable<Sailing_ship>, IEquatable<Sailing_ship>
     {
+        public int CompareTo(Sailing_ship other)
+        {
+            var res = (this is Boat).CompareTo(other is Boat);
+            if (res != 0)
+                return res;
+            if (sail != other.sail)
+                return sail.CompareTo(other.sail);
+            if (addColor != other.addColor && BodyColor== other.BodyColor)
+                addColor.Name.CompareTo(other.addColor.Name);
+            return 0;
+        }
+
+        public bool Equals(Sailing_ship other)
+        {
+            var res = (this is Boat).Equals(other is Boat);
+            if (!res)
+                return res;
+            if (sail != other.sail)
+                return false;
+            if ((addColor == other.addColor && BodyColor != other.BodyColor) || (addColor != other.addColor))
+                return false;           
+            return true;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+            Sailing_ship boatObj = obj as Sailing_ship;
+            if (boatObj == null)
+                return false;
+            else
+                return Equals(boatObj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+
         private bool sail;
         private Color addColor;
         public override int MaxSpeed
