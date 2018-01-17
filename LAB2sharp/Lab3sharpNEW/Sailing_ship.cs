@@ -11,6 +11,10 @@ namespace Lab3sharpNEW
     {
         private bool sail;
         private Color addColor;
+        //       public bool wrongSailBoatSpeed = false;
+        //        public bool wrongSailBoatCargo = false;
+        //        public bool wrongSailBoatWeight = false;
+
         public override int MaxSpeed
         {
             get
