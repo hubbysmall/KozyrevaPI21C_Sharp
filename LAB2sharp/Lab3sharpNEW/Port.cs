@@ -53,13 +53,13 @@ namespace Lab3sharpNEW
         {
             Pen pen = new Pen(Color.Black, 4);
             g.DrawString("L" + (currentDock), new Font("Arial", 30), new SolidBrush(Color.Blue), (countDocks / 5) * DockWidth - 70, 420);
-            g.DrawRectangle(pen, 0, 0, (countDocks / 5) * DockWidth, 480);
+            g.DrawRectangle(pen, 0, 0, (countDocks / 5) * DockWidth, 500);
             for(int i=0; i < countDocks / 5; i++)
             {
-                for(int j=0; j<5; j++)
+                for(int j=0; j<6; j++)
                 {
                     g.DrawLine(pen, i * DockWidth, j * DockHeight, i * DockWidth + 110, j * DockHeight);
-                    if (j < 4)
+                    if (j < 5)
                     {
                         g.DrawString((i * 5 + j ).ToString(), new Font("Arial", 30), new SolidBrush(Color.Blue), i * DockWidth + 30, j * DockHeight + 20);
                     }

@@ -22,8 +22,8 @@ namespace Lab3sharpNEW
 
         public static int operator +(Docks<T> plc, T ship)
         {
-            if (plc.docks.Count == plc.maxCount)
-                return -1;
+			if (plc.docks.Count == plc.maxCount)
+				throw new ParkingOverflowException();
             for(int i=0; i<plc.docks.Count; i++)
             {
                 if (plc.checkIfFree(i))
@@ -44,13 +44,14 @@ namespace Lab3sharpNEW
                 plc.docks.Remove(index);
                 return ship;
             }
-            return plc.defaultVal;
+			throw new ParkingIndexOutOfRangeException();
         }
 
         private bool checkIfFree(int index)
         {
             return !docks.ContainsKey(index);
         }
+
         public T this[int indx]
         {
             get
