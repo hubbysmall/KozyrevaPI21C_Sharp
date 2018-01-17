@@ -72,15 +72,18 @@ namespace Lab3sharpNEW
         public void DrawItAll(Graphics g, int width, int height)
         {
             DrawDocks(g);
-            for (int i = 0; i < countDocks; i++)
+            int i = 0;
+            foreach (var ship in port[currentDock])
             {
-                var ship = port[currentDock][i];
-                if (ship != null)
-                {         
-                    ship.setPosition(5 + i / 5 * DockWidth + 5, i % 5 * DockHeight + 45);
-                    ship.drawBoat(g);
-                }             
+                ship.setPosition(5 + i / 5 * DockWidth + 5, i % 5 * DockHeight + 45);
+                ship.drawBoat(g);
+                i++;
             }
+        }
+
+        public void Sort()
+        {
+            port.Sort();
         }
 
         public bool SaveData(string filename)

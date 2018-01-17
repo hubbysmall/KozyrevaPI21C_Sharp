@@ -7,8 +7,63 @@ using System.Threading.Tasks;
 
 namespace Lab3sharpNEW
 {
-    public class Boat: Water_transport
+    public class Boat: Water_transport, IComparable<Boat>, IEquatable<Boat>
     {
+        public int CompareTo(Boat other)
+        {
+            if (other == null)
+            {
+                return 1;
+            }
+            if (MaxSpeed != other.MaxSpeed)
+            {
+                return MaxSpeed.CompareTo(other.MaxSpeed);
+            }
+            if (MaxCountCargos != other.MaxCountCargos)
+            {
+                return MaxCountCargos.CompareTo(other.MaxCountCargos);
+            }
+            if (Weight != other.Weight)
+            {
+                return Weight.CompareTo(other.Weight);
+            }
+            if (BodyColor != other.BodyColor)
+            {
+                BodyColor.Name.CompareTo(other.BodyColor.Name);
+            }
+            return 0;
+        }
+
+        public bool Equals(Boat other)
+        {
+            if (other == null)
+                return false;
+            if (MaxSpeed != other.MaxSpeed)
+                return false;
+            if (MaxCountCargos != other.MaxCountCargos)
+                return false;
+            if (Weight != other.Weight)
+                return false;
+            if (BodyColor != other.BodyColor)
+                return false;
+            return true;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+            Boat boatObj = obj as Boat;
+            if (boatObj == null)
+                return false;
+            else
+                return Equals(boatObj);
+        }
+        public override int GetHashCode()
+        {
+            return MaxSpeed.GetHashCode();
+        }
+
         public virtual int MaxSpeed
         {
             get
@@ -107,9 +162,8 @@ namespace Lab3sharpNEW
         }
         protected virtual void drawSailingShip(Graphics g)
         {
-            Pen pen = new Pen(BodyColor);     
+            Pen pen = new Pen(BodyColor);
             Brush brBrown = new SolidBrush(BodyColor);
-
             g.FillPie(brBrown, startPosX, startPosY, 70, 50, 0, 180);
             g.DrawArc(pen, startPosX, startPosY, 70, 50, 0, 180);
 

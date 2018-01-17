@@ -127,7 +127,7 @@ namespace Lab3sharpNEW
         }
 
         private void orderBtn_Click(object sender, EventArgs e)
-        { 
+        {
             addiForm = new additionalForm();
             addiForm.AddEvent(addBoat);
             addiForm.Show();
@@ -191,6 +191,11 @@ namespace Lab3sharpNEW
                 }
             }
 
+        }
+
+        private void Sortbutton_Click(object sender, EventArgs e)
+        {
+            port.Sort();
         }
     }
 }
