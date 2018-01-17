@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -82,7 +83,112 @@ namespace Lab3sharpNEW
             }
         }
 
-
+        public bool SaveData(string filename)
+        {
+            if (File.Exists(filename))
+            {
+                File.Delete(filename);
+            }
+            using (FileStream fs = new FileStream(filename, FileMode.Create))
+            {
+                using(BufferedStream bs = new BufferedStream(fs))
+                {
+                    byte[] info = new UTF8Encoding(true).GetBytes("CountLeveles:" +
+                        port.Count + Environment.NewLine);
+                    fs.Write(info, 0, info.Length);
+                    foreach(var stage in port)
+                    {
+                        info = new UTF8Encoding(true).GetBytes("Level" + Environment.NewLine);
+                        fs.Write(info, 0, info.Length);
+                        for(int i=0; i<countDocks; i++)
+                        {
+                            var boat = stage[i];
+                            if (boat != null)
+                            {
+                                if(boat.GetType().Name == "Boat")
+                                {
+                                    info = new UTF8Encoding(true).GetBytes("Boat:");
+                                    fs.Write(info, 0, info.Length);
+                                }
+                                if (boat.GetType().Name == "Sailing_ship")
+                                {
+                                    info = new UTF8Encoding(true).GetBytes("Sailing_ship:");
+                                    fs.Write(info, 0, info.Length);
+                                }
+                                info = new UTF8Encoding(true).GetBytes(boat.getInfo() + Environment.NewLine);
+                                fs.Write(info, 0, info.Length);
+                            }
+                        }
+                    }
+                }
+            }
+                return true;
+        }
+        
+        public bool LoadData(string filename)
+        {
+            
+            if (!File.Exists(filename))
+            {
+                return false;
+            }
+            using (FileStream fs = new FileStream(filename, FileMode.Open))
+            {
+                string s = "";
+                using (BufferedStream bs = new BufferedStream(fs))
+                {
+                    byte[] b = new byte[fs.Length];
+                    UTF8Encoding temp = new UTF8Encoding(true);
+                    while (bs.Read(b, 0, b.Length) > 0)
+                    {
+                        s += temp.GetString(b);
+                    }
+                }
+                s = s.Replace("\r", "");
+                var strs = s.Split('\n');
+                if (strs[0].Contains("CountLeveles"))
+                {//Считываем количество уровней
+                    int count = Convert.ToInt32(strs[0].Split(':')[1]);
+                    if (port != null)
+                    {
+                        port.Clear();
+                    }
+                    port = new List<Docks<ITransport>>(count);
+                }
+                else
+                {
+                    return false;
+                }
+                int counter = -1;
+                for (int i = 1; i < strs.Length; ++i)
+                {//шагаем по считанным записям
+                    if (strs[i] == "Level")
+                    {//начинаем новый уровень
+                        counter++;
+                        port.Add(new Docks<ITransport>(countDocks, null));
+                    }
+                    else if (strs[i].Split(':')[0] == "Boat")
+                    {
+                        ITransport boat = new Boat(strs[i].Split(':')[1]);
+                        int number = port[counter] + boat;
+                        if (number == -1)
+                        {
+                            return false;
+                        }
+                    }
+                    else if (strs[i].Split(':')[0] == "Sailing_ship")
+                    {
+                        ITransport boat = new Sailing_ship(strs[i].Split(':')[1]);
+                        int number = port[counter] + boat;
+                        if (number == -1)
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        } 
 
     }
 }

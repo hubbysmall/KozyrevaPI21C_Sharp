@@ -113,7 +113,7 @@ namespace Lab3sharpNEW
         }
 
         private void orderBtn_Click(object sender, EventArgs e)
-        {           
+        {
             addiForm = new additionalForm();
             addiForm.AddEvent(addBoat);
             addiForm.Show();
@@ -133,6 +133,43 @@ namespace Lab3sharpNEW
                     MessageBox.Show("Поставить не получилось");
                 }
             }
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (port.LoadData(openFileDialog1.FileName))
+                {
+                    MessageBox.Show("Загрузили", "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Незагрузили", "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                Draw();
+            }       
+
+    }
+
+    private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (port.SaveData(saveFileDialog1.FileName))
+                {
+                    MessageBox.Show("Сохранение прошло успешно", "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Несохранилось", "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
         }
     }
 }

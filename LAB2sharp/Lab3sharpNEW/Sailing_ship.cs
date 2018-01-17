@@ -75,6 +75,21 @@ namespace Lab3sharpNEW
 
         }
 
+        public Sailing_ship(string info) : base(info)
+        {
+            string[] strs = info.Split(';');
+            if (strs.Length == 6)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                MaxCountCargos = Convert.ToInt32(strs[1]);
+                Weight = Convert.ToDouble(strs[2]);
+                BodyColor = Color.FromName(strs[3]);
+                sail = Convert.ToBoolean(strs[4]);
+                addColor = Color.FromName(strs[5]);
+                
+            }
+        }
+
 
 
         protected override void drawSailingShip(Graphics g)
@@ -92,6 +107,12 @@ namespace Lab3sharpNEW
         public void SetDopColor(Color color)
         {
             addColor = color;
+        }
+
+        public override string getInfo()
+        {
+            return MaxSpeed + ";" + MaxCountCargos + ";" + Weight + ";" + BodyColor.Name + ";" + sail + ";"+
+                addColor.Name;
         }
 
     }
