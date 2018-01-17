@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Lab3sharpNEW
 {
     public class Boat: Water_transport
-    { 
+    {
         public virtual int MaxSpeed
         {
             get
@@ -107,7 +107,7 @@ namespace Lab3sharpNEW
         }
         protected virtual void drawSailingShip(Graphics g)
         {
-            Pen pen = new Pen(BodyColor);      
+            Pen pen = new Pen(BodyColor);     
             Brush brBrown = new SolidBrush(BodyColor);
 
             g.FillPie(brBrown, startPosX, startPosY, 70, 50, 0, 180);

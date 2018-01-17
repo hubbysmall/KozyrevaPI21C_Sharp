@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using NLog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +17,12 @@ namespace Lab3sharpNEW
         Port port;
         additionalForm addiForm;
 
+		private Logger log;
+
         public Form1()
         {
             InitializeComponent();
+			log = LogManager.GetCurrentClassLogger();
             port = new Port(4);
             for(int i=0; i<4; i++)
             {
@@ -80,21 +85,27 @@ namespace Lab3sharpNEW
                 string stage = listBox1.Items[listBox1.SelectedIndex].ToString();
                 if (maskedTextBox1.Text != "")
                 {
-                    var boat = port.PutOutDock(Convert.ToInt32(maskedTextBox1.Text));
-                    if (boat != null)
-                    {
+					try
+					{
+						var boat = port.PutOutDock(Convert.ToInt32(maskedTextBox1.Text));                   
                         Bitmap bmp = new Bitmap(pictureBox2.Width, pictureBox2.Height);
                         Graphics gr = Graphics.FromImage(bmp);
                         boat.setPosition(5, 45);
                         boat.drawBoat(gr);
                         pictureBox2.Image = bmp;
                         Draw();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Тут ничего нет");
-                    }
-                }
+					}
+					catch(ParkingIndexOutOfRangeException ex)
+					{
+						MessageBox.Show(ex.Message, "No such a place", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+					catch (Exception ex)
+					{
+						MessageBox.Show(ex.Message, "Common error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+
+
+				}
             }
         }
 
@@ -103,7 +114,10 @@ namespace Lab3sharpNEW
             port.LevelUp();
             listBox1.SelectedIndex = port.getCurrentDock;
             Draw();
-        }
+			log.Info("Going to next level:" + port.getCurrentDock);
+			if(port.getCurrentDock==2)
+				log.Warn("It was the level before the last one:" + port.getCurrentDock);
+		}
 
         private void previousBtn_Click(object sender, EventArgs e)
         {
@@ -113,7 +127,7 @@ namespace Lab3sharpNEW
         }
 
         private void orderBtn_Click(object sender, EventArgs e)
-        {
+        { 
             addiForm = new additionalForm();
             addiForm.AddEvent(addBoat);
             addiForm.Show();
@@ -122,17 +136,24 @@ namespace Lab3sharpNEW
         private void addBoat(ITransport boat) {
             if (boat != null)
             {
-                int place = port.PutInDock(boat);
-                if (place > -1)
-                {
-                    Draw();
+				try
+				{
+					int place = port.PutInDock(boat);
+					Draw();
                     MessageBox.Show("Ваше место:" + place);
-                }
-                else
-                {
-                    MessageBox.Show("Поставить не получилось");
-                }
-            }
+				}
+				catch(ParkingOverflowException ex)
+				{
+					MessageBox.Show(ex.Message,"Overflow", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message, "Common error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+
+
+
+			}
         }
 
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)

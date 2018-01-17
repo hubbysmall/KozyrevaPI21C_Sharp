@@ -48,7 +48,6 @@ namespace Lab3sharpNEW
                 countCargos += count;
             }
         }
-
         public int relieveCargo()
         {
             int count = countCargos;
