@@ -1,0 +1,18 @@
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe.config
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.pdb
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.csprojResolveAssemblyReference.cache
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Form1.resources
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Properties.Resources.resources
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.csproj.GenerateResource.Cache
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.exe
+E:\VisualStudio\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe.config
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\bin\Debug\Lab3sharpNEW.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.csprojResolveAssemblyReference.cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Form1.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.Properties.Resources.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab3sharpNEW\Lab3sharpNEW\obj\Debug\Lab3sharpNEW.csproj.GenerateResource.Cache
