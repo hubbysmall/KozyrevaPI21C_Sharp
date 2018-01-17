@@ -48,6 +48,7 @@ namespace Lab3sharpNEW
                 countCargos += count;
             }
         }
+
         public int relieveCargo()
         {
             int count = countCargos;
@@ -59,5 +60,7 @@ namespace Lab3sharpNEW
         {
             BodyColor = color;
         }
+
+        public abstract string getInfo();
     }
 }

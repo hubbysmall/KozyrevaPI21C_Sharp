@@ -111,6 +111,8 @@ namespace Lab3sharpNEW
         {
             if (boat != null)
             {
+ //               boat.SetDopColor((Color)e.Data.GetData(typeof(Color)));
+ // как определить метод дополнительного цвета
                 if(boat is Sailing_ship)
                 {
                     (boat as Sailing_ship).SetDopColor((Color)e.Data.GetData(typeof(Color)));
