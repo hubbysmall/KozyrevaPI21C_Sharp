@@ -1,0 +1,11 @@
+E:\VisualStudio\Lab1\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\bin\Debug\Lab1.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\obj\Debug\Lab1.Form1.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\obj\Debug\Lab1.Form2.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\obj\Debug\Lab1.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\Lab1\Lab1\obj\Debug\Lab1.pdb
