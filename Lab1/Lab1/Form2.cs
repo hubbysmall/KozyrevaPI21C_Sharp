@@ -78,10 +78,6 @@ namespace Lab1
 
         private void Cut_meat_Click(object sender, EventArgs e)
         {
-          /*  if (meats == null || Vegtbls == null) {
-                MessageBox.Show("Мяса или овощей нет, что резать?", "Ошибка логики", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }*/
             if (numericMeat.Value == 0 || numericVegs.Value==0)
             {
                 MessageBox.Show("Мяса или овощей нет, что резать?", "Ошибка логики", MessageBoxButtons.OK, MessageBoxIcon.Error);
