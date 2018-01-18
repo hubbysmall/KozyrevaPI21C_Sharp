@@ -9,9 +9,6 @@ namespace Lab3sharpNEW
 {
     public class Boat: Water_transport
     {
-        //    public bool wrongBoatSpeed = false;
-        //    public bool wrongBoatCargo = false;
-        //    public bool wrongBoatWeight = false;
         public virtual int MaxSpeed
         {
             get
@@ -93,13 +90,8 @@ namespace Lab3sharpNEW
         }
         protected virtual void drawSailingShip(Graphics g)
         {
-            //контур
-            Pen pen = new Pen(BodyColor);
-            //         g.DrawArc(pen, startPosX, startPosY, 20, 20, 0, 180);
-            //          g.DrawLine(pen, startPosX, startPosY + 10, startPosX + 20, startPosY + 10);
-            //залив
+            Pen pen = new Pen(BodyColor);  
             Brush brBrown = new SolidBrush(BodyColor);
-
             g.FillPie(brBrown, startPosX, startPosY, 70, 50, 0, 180);
             g.DrawArc(pen, startPosX, startPosY, 70, 50, 0, 180);
 
