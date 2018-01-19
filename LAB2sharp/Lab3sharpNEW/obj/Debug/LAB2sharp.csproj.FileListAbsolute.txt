@@ -1,0 +1,9 @@
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\obj\Debug\LAB2sharp.csprojResolveAssemblyReference.cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\obj\Debug\LAB2sharp.Properties.Resources.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\obj\Debug\LAB2sharp.csproj.GenerateResource.Cache
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\obj\Debug\LAB2sharp.Form1.resources
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\bin\Debug\LAB2sharp.exe.config
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\bin\Debug\LAB2sharp.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\bin\Debug\LAB2sharp.pdb
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\obj\Debug\LAB2sharp.exe
+C:\Users\Мария\Desktop\2курс1сем\ТП\доделанные лабы\temp\LAB2sharp\Lab3sharpNEW\obj\Debug\LAB2sharp.pdb
