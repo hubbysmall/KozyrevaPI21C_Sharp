@@ -10,18 +10,13 @@ namespace Lab3sharpNEW
     public class Sailing_ship: Boat
     {
         private bool sail;
-        private Color addColor;
-        //       public bool wrongSailBoatSpeed = false;
-        //        public bool wrongSailBoatCargo = false;
-        //        public bool wrongSailBoatWeight = false;
-
+        private Color addColor;       
         public override int MaxSpeed
         {
             get
             {
                 return base.MaxSpeed;
             }
-
             protected set
             {
                 if (value > 0 && value <= 50)
@@ -29,8 +24,6 @@ namespace Lab3sharpNEW
                 else
                 {
                     base.MaxSpeed = 17;
-
-
                 }
             }
         }
@@ -41,14 +34,12 @@ namespace Lab3sharpNEW
             {
                 return base.MaxCountCargos;
             }
-
             protected set
             {
                 if (value > 0 && value <= 5000)
                     base.MaxCountCargos = value;
                 else
                     base.MaxCountCargos = 2000;
-
             }
         }
 
@@ -64,23 +55,15 @@ namespace Lab3sharpNEW
                 if (value > 0 & value <= 7000)
                     base.Weight = value;
                 else
-                    base.Weight = 2500;
-
+                   base.Weight = 2500;
             }
         }
-
-
-
         public Sailing_ship(int maxSpeed, int maxCount_cargo, double weight, Color color, bool Sail, Color addiColor) :
             base(maxSpeed, maxCount_cargo, weight, color)
         {
             this.sail = Sail;
             this.addColor = addiColor;
-
         }
-
-
-
         protected override void drawSailingShip(Graphics g)
         {
             base.drawSailingShip(g);
