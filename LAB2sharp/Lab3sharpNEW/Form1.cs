@@ -17,18 +17,28 @@ namespace Lab3sharpNEW
         public Form1()
         {
             InitializeComponent();
-            port = new Port();
+            port = new Port(4);
+            for(int i=0; i<4; i++)
+            {
+                listBox1.Items.Add("subport" + i);
+            }
+            listBox1.SelectedIndex = port.getCurrentDock;
             Draw();
 
         }
 
         private void Draw()
         {
-            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            Graphics grf = Graphics.FromImage(bmp);
-            port.DrawItAll(grf, pictureBox1.Width, pictureBox1.Height);
-            pictureBox1.Image = bmp;
+            if (listBox1.SelectedIndex > -1)
+            {
+                Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                Graphics grf = Graphics.FromImage(bmp);
+                port.DrawItAll(grf, pictureBox1.Width, pictureBox1.Height);
+                pictureBox1.Image = bmp;
+            }
         }
+
+
 
 
 
@@ -64,17 +74,41 @@ namespace Lab3sharpNEW
 
         private void TakeBoat_Click(object sender, EventArgs e)
         {
-            if (maskedTextBox1.Text != "")
+            if (listBox1.SelectedIndex > -1)
             {
-                var boat = port.PutOutDock(Convert.ToInt32(maskedTextBox1.Text));
-
-                Bitmap bmp = new Bitmap(pictureBox2.Width, pictureBox2.Height);
-                Graphics gr = Graphics.FromImage(bmp);
-                boat.setPosition(5, 45);
-                boat.drawBoat(gr);
-                pictureBox2.Image = bmp;
-                Draw();
+                string stage = listBox1.Items[listBox1.SelectedIndex].ToString();
+                if (maskedTextBox1.Text != "")
+                {
+                    var boat = port.PutOutDock(Convert.ToInt32(maskedTextBox1.Text));
+                    if (boat != null)
+                    {
+                        Bitmap bmp = new Bitmap(pictureBox2.Width, pictureBox2.Height);
+                        Graphics gr = Graphics.FromImage(bmp);
+                        boat.setPosition(5, 45);
+                        boat.drawBoat(gr);
+                        pictureBox2.Image = bmp;
+                        Draw();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Тут ничего нет");
+                    }
+                }
             }
+        }
+
+        private void nextBtn_Click(object sender, EventArgs e)
+        {
+            port.LevelUp();
+            listBox1.SelectedIndex = port.getCurrentDock;
+            Draw();
+        }
+
+        private void previousBtn_Click(object sender, EventArgs e)
+        {
+            port.LevelDown();
+            listBox1.SelectedIndex = port.getCurrentDock;
+            Draw();
         }
     }
 }

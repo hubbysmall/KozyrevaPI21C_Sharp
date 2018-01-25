@@ -48,11 +48,14 @@ namespace Lab3sharpNEW
                 countCargos += count;
             }
         }
+
+        // ватерлиния
+
         public int relieveCargo()
         {
             int count = countCargos;
             countCargos = 0;
             return count;
-        } 
+        } ///////// not used
     }
 }

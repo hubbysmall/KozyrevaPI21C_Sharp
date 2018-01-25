@@ -8,39 +8,40 @@ namespace Lab3sharpNEW
 {
     class Docks<T> where T : ITransport
     {
-        private T[] places;
+        private Dictionary<int, T> docks;
         private T defaultVal;
+        private int maxCount;
 
         public Docks(int size, T defV)
         {
             defaultVal = defV;
-            places = new T[size];
-            for (int i = 0; i < places.Length; i++)
-            {
-                places[i] = defaultVal;
-            }
+            docks = new Dictionary<int, T>();
+            maxCount = size;
+           
         }
 
         public static int operator +(Docks<T> plc, T ship)
         {
-            for (int i = 0; i < plc.places.Length; i++)
+            if (plc.docks.Count == plc.maxCount)
+                return -1;
+            for(int i=0; i<plc.docks.Count; i++)
             {
                 if (plc.checkIfFree(i))
                 {
-                    plc.places[i] = ship;
+                    plc.docks.Add(i, ship);
                     return i;
                 }
-
             }
-            return -1;
+            plc.docks.Add(plc.docks.Count, ship);
+            return plc.docks.Count - 1;
         }
 
         public static T operator -(Docks<T> plc, int index)
         {
-            if (!plc.checkIfFree(index))
+            if (plc.docks.ContainsKey(index))
             {
-                T ship = plc.places[index];
-                plc.places[index] = plc.defaultVal;
+                T ship = plc.docks[index];
+                plc.docks.Remove(index);
                 return ship;
             }
             return plc.defaultVal;
@@ -48,20 +49,18 @@ namespace Lab3sharpNEW
 
         private bool checkIfFree(int index)
         {
-            if (index < 0 || index > places.Length)
-                return false;
-            if (places[index] == null)
-                return true;
-            if (places[index].Equals(defaultVal))
-                return true;
-            return false;
+            return !docks.ContainsKey(index);
         }
 
-        public T getShip(int index)
+        public T this[int indx]
         {
-            if (index >= 0 && index < places.Length)
-                return places[index];
-            return defaultVal;
+            get
+            {
+                if (docks.ContainsKey(indx))
+                    return docks[indx];
+                return defaultVal;
+            }
         }
+
     }
 }

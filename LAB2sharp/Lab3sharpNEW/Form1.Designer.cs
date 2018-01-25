@@ -32,10 +32,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.putShipInDock = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.TakeBoat = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.previousBtn = new System.Windows.Forms.Button();
+            this.nextBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -43,9 +47,9 @@
             // 
             // putBoatInDock
             // 
-            this.putBoatInDock.Location = new System.Drawing.Point(812, 25);
+            this.putBoatInDock.Location = new System.Drawing.Point(913, 158);
             this.putBoatInDock.Name = "putBoatInDock";
-            this.putBoatInDock.Size = new System.Drawing.Size(70, 58);
+            this.putBoatInDock.Size = new System.Drawing.Size(113, 35);
             this.putBoatInDock.TabIndex = 0;
             this.putBoatInDock.Text = "Поставить лодку в док";
             this.putBoatInDock.UseVisualStyleBackColor = true;
@@ -55,15 +59,15 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(26, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(758, 412);
+            this.pictureBox1.Size = new System.Drawing.Size(881, 497);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // putShipInDock
             // 
-            this.putShipInDock.Location = new System.Drawing.Point(812, 90);
+            this.putShipInDock.Location = new System.Drawing.Point(913, 199);
             this.putShipInDock.Name = "putShipInDock";
-            this.putShipInDock.Size = new System.Drawing.Size(70, 60);
+            this.putShipInDock.Size = new System.Drawing.Size(113, 36);
             this.putShipInDock.TabIndex = 2;
             this.putShipInDock.Text = "Парусник в док";
             this.putShipInDock.UseVisualStyleBackColor = true;
@@ -75,37 +79,12 @@
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.maskedTextBox1);
-            this.groupBox1.Location = new System.Drawing.Point(790, 156);
+            this.groupBox1.Location = new System.Drawing.Point(913, 241);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(113, 281);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Забратьт из дока";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(72, 28);
-            this.maskedTextBox1.Mask = "00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(20, 20);
-            this.maskedTextBox1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Номер";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(7, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 171);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // TakeBoat
             // 
@@ -117,11 +96,77 @@
             this.TakeBoat.UseVisualStyleBackColor = true;
             this.TakeBoat.Click += new System.EventHandler(this.TakeBoat_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(7, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 171);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Номер";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(72, 28);
+            this.maskedTextBox1.Mask = "00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(20, 20);
+            this.maskedTextBox1.TabIndex = 0;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(913, 41);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(113, 82);
+            this.listBox1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(917, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Subport:";
+            // 
+            // previousBtn
+            // 
+            this.previousBtn.Location = new System.Drawing.Point(913, 129);
+            this.previousBtn.Name = "previousBtn";
+            this.previousBtn.Size = new System.Drawing.Size(37, 23);
+            this.previousBtn.TabIndex = 6;
+            this.previousBtn.Text = "<<";
+            this.previousBtn.UseVisualStyleBackColor = true;
+            this.previousBtn.Click += new System.EventHandler(this.previousBtn_Click);
+            // 
+            // nextBtn
+            // 
+            this.nextBtn.Location = new System.Drawing.Point(989, 126);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(37, 23);
+            this.nextBtn.TabIndex = 7;
+            this.nextBtn.Text = ">>";
+            this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 450);
+            this.ClientSize = new System.Drawing.Size(1038, 534);
+            this.Controls.Add(this.nextBtn);
+            this.Controls.Add(this.previousBtn);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.putShipInDock);
             this.Controls.Add(this.pictureBox1);
@@ -133,6 +178,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -146,6 +192,10 @@
         private System.Windows.Forms.Button TakeBoat;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button previousBtn;
+        private System.Windows.Forms.Button nextBtn;
     }
 }
 
