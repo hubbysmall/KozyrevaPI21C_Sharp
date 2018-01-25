@@ -29,177 +29,123 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonMainColor = new System.Windows.Forms.Button();
-            this.buttonAddColor = new System.Windows.Forms.Button();
-            this.textBoxLoad = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxWeight = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxSpeed = new System.Windows.Forms.TextBox();
-            this.buttonMakeBoat = new System.Windows.Forms.Button();
-            this.buttonMakeShip = new System.Windows.Forms.Button();
-            this.buttonMOve = new System.Windows.Forms.Button();
-            this.checkBoxSailOn = new System.Windows.Forms.CheckBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.putBoatInDock = new System.Windows.Forms.Button();
+            this.putShipInDock = new System.Windows.Forms.Button();
+            this.TakeBoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(19, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(665, 231);
+            this.pictureBox1.Size = new System.Drawing.Size(739, 406);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonMainColor
+            // groupBox2
             // 
-            this.buttonMainColor.Location = new System.Drawing.Point(19, 253);
-            this.buttonMainColor.Name = "buttonMainColor";
-            this.buttonMainColor.Size = new System.Drawing.Size(75, 23);
-            this.buttonMainColor.TabIndex = 1;
-            this.buttonMainColor.Text = "Main_Color";
-            this.buttonMainColor.UseVisualStyleBackColor = true;
-            this.buttonMainColor.Click += new System.EventHandler(this.buttonMainColor_Click);
+            this.groupBox2.Controls.Add(this.TakeBoat);
+            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.maskedTextBox1);
+            this.groupBox2.Location = new System.Drawing.Point(758, 140);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(118, 281);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Забратьт из дока";
             // 
-            // buttonAddColor
+            // pictureBox2
             // 
-            this.buttonAddColor.Location = new System.Drawing.Point(19, 283);
-            this.buttonAddColor.Name = "buttonAddColor";
-            this.buttonAddColor.Size = new System.Drawing.Size(75, 23);
-            this.buttonAddColor.TabIndex = 2;
-            this.buttonAddColor.Text = "Add_Color";
-            this.buttonAddColor.UseVisualStyleBackColor = true;
-            this.buttonAddColor.Click += new System.EventHandler(this.buttonAddColor_Click);
-            // 
-            // textBoxLoad
-            // 
-            this.textBoxLoad.Location = new System.Drawing.Point(172, 256);
-            this.textBoxLoad.Name = "textBoxLoad";
-            this.textBoxLoad.Size = new System.Drawing.Size(41, 20);
-            this.textBoxLoad.TabIndex = 3;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 97);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 178);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 259);
+            this.label1.Location = new System.Drawing.Point(19, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "MaxLoad";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Номер";
             // 
-            // label2
+            // maskedTextBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(109, 283);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Weight";
+            this.maskedTextBox1.Location = new System.Drawing.Point(72, 28);
+            this.maskedTextBox1.Mask = "00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(20, 20);
+            this.maskedTextBox1.TabIndex = 0;
             // 
-            // textBoxWeight
+            // putBoatInDock
             // 
-            this.textBoxWeight.Location = new System.Drawing.Point(172, 280);
-            this.textBoxWeight.Name = "textBoxWeight";
-            this.textBoxWeight.Size = new System.Drawing.Size(41, 20);
-            this.textBoxWeight.TabIndex = 6;
+            this.putBoatInDock.Location = new System.Drawing.Point(764, 99);
+            this.putBoatInDock.Name = "putBoatInDock";
+            this.putBoatInDock.Size = new System.Drawing.Size(112, 35);
+            this.putBoatInDock.TabIndex = 5;
+            this.putBoatInDock.Text = "Поставить лодку в док";
+            this.putBoatInDock.UseVisualStyleBackColor = true;
+            this.putBoatInDock.Click += new System.EventHandler(this.putBoatInDock_Click_1);
             // 
-            // label3
+            // putShipInDock
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(112, 309);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "MaxSpeed";
+            this.putShipInDock.Location = new System.Drawing.Point(764, 58);
+            this.putShipInDock.Name = "putShipInDock";
+            this.putShipInDock.Size = new System.Drawing.Size(112, 35);
+            this.putShipInDock.TabIndex = 6;
+            this.putShipInDock.Text = "Парусник в док";
+            this.putShipInDock.UseVisualStyleBackColor = true;
+            this.putShipInDock.Click += new System.EventHandler(this.putShipInDock_Click_1);
             // 
-            // textBoxSpeed
+            // TakeBoat
             // 
-            this.textBoxSpeed.Location = new System.Drawing.Point(172, 306);
-            this.textBoxSpeed.Name = "textBoxSpeed";
-            this.textBoxSpeed.Size = new System.Drawing.Size(41, 20);
-            this.textBoxSpeed.TabIndex = 8;
-            // 
-            // buttonMakeBoat
-            // 
-            this.buttonMakeBoat.Location = new System.Drawing.Point(389, 249);
-            this.buttonMakeBoat.Name = "buttonMakeBoat";
-            this.buttonMakeBoat.Size = new System.Drawing.Size(75, 23);
-            this.buttonMakeBoat.TabIndex = 9;
-            this.buttonMakeBoat.Text = "Boat";
-            this.buttonMakeBoat.UseVisualStyleBackColor = true;
-            this.buttonMakeBoat.Click += new System.EventHandler(this.buttonMakeBoat_Click);
-            // 
-            // buttonMakeShip
-            // 
-            this.buttonMakeShip.Location = new System.Drawing.Point(389, 273);
-            this.buttonMakeShip.Name = "buttonMakeShip";
-            this.buttonMakeShip.Size = new System.Drawing.Size(75, 23);
-            this.buttonMakeShip.TabIndex = 10;
-            this.buttonMakeShip.Text = "SailShip";
-            this.buttonMakeShip.UseVisualStyleBackColor = true;
-            this.buttonMakeShip.Click += new System.EventHandler(this.buttonMakeShip_Click);
-            // 
-            // buttonMOve
-            // 
-            this.buttonMOve.Location = new System.Drawing.Point(389, 299);
-            this.buttonMOve.Name = "buttonMOve";
-            this.buttonMOve.Size = new System.Drawing.Size(75, 23);
-            this.buttonMOve.TabIndex = 11;
-            this.buttonMOve.Text = "Move";
-            this.buttonMOve.UseVisualStyleBackColor = true;
-            this.buttonMOve.Click += new System.EventHandler(this.buttonMOve_Click);
-            // 
-            // checkBoxSailOn
-            // 
-            this.checkBoxSailOn.AutoSize = true;
-            this.checkBoxSailOn.Location = new System.Drawing.Point(245, 258);
-            this.checkBoxSailOn.Name = "checkBoxSailOn";
-            this.checkBoxSailOn.Size = new System.Drawing.Size(58, 17);
-            this.checkBoxSailOn.TabIndex = 12;
-            this.checkBoxSailOn.Text = "Sail on";
-            this.checkBoxSailOn.UseVisualStyleBackColor = true;
+            this.TakeBoat.Location = new System.Drawing.Point(6, 68);
+            this.TakeBoat.Name = "TakeBoat";
+            this.TakeBoat.Size = new System.Drawing.Size(105, 23);
+            this.TakeBoat.TabIndex = 8;
+            this.TakeBoat.Text = "Забрать";
+            this.TakeBoat.UseVisualStyleBackColor = true;
+            this.TakeBoat.Click += new System.EventHandler(this.TakeBoat_Click_1);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 349);
-            this.Controls.Add(this.checkBoxSailOn);
-            this.Controls.Add(this.buttonMOve);
-            this.Controls.Add(this.buttonMakeShip);
-            this.Controls.Add(this.buttonMakeBoat);
-            this.Controls.Add(this.textBoxSpeed);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxWeight);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxLoad);
-            this.Controls.Add(this.buttonAddColor);
-            this.Controls.Add(this.buttonMainColor);
+            this.ClientSize = new System.Drawing.Size(888, 433);
+            this.Controls.Add(this.putShipInDock);
+            this.Controls.Add(this.putBoatInDock);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonMainColor;
-        private System.Windows.Forms.Button buttonAddColor;
-        private System.Windows.Forms.TextBox textBoxLoad;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxWeight;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxSpeed;
-        private System.Windows.Forms.Button buttonMakeBoat;
-        private System.Windows.Forms.Button buttonMakeShip;
-        private System.Windows.Forms.Button buttonMOve;
-        private System.Windows.Forms.CheckBox checkBoxSailOn;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button putBoatInDock;
+        private System.Windows.Forms.Button putShipInDock;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button TakeBoat;
     }
 }
